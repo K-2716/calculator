@@ -69,6 +69,7 @@ for (let i = 0; i < buttons.length; i++) {
         case "7":
         case "8":
         case "9":
+          // Haandle all number buttons
           if (currentInput === "0" || justEvaluated) {
             currentInput = value;
             justEvaluated = false;
@@ -89,6 +90,7 @@ for (let i = 0; i < buttons.length; i++) {
         case "-":
         case "x":
         case "÷":
+          //Handle all operator
           calculateOrReAssign(value);
           break;
   
@@ -98,6 +100,7 @@ for (let i = 0; i < buttons.length; i++) {
           break;
   
         case "AC":
+          // Reset default
           operator = "";
           previousInput = "";
           currentInput = "0";
